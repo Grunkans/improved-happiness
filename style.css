@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100;
+}
+
+
+
+header{
+	background-color: #9EAF97;
+	padding: 0px;
+
+}
+
+main{
+	background-color: #BDBB9E;
+	flex: 1;
+	padding: 20px;
+	min-height: 100vh;
+}
+
+
+footer{
+	background-color: #D7D0C8;
+	padding: 20px;
+
+}
+
+.headergrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 2em 2em 2em;
+}
+
+.loggo{
+	grid-column: 2;
+	grid-row: 2;
+
+}
