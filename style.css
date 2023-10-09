@@ -1,4 +1,44 @@
 body{
+	display: grid;
+	margin: 0;
+	padding: 0;
+	grid-template-columns: 1;
+	grid-template-rows: 1;
+}
+
+
+.header-container{
+	display: grid;
+	background-color: #9EAF97;
+	padding: 5px;
+	height: 20vh;
+	width: 100wh;
+
+}
+
+.main-container{
+	display: grid;
+	background-color: #BDBB9E;
+	padding: 5px;
+	height: flex;
+	width: 100wh;
+
+}
+
+.footer-container{
+	display: grid;
+	background-color: #D7D0C8;
+	padding: 5px;
+	height: 8vh;
+	width: 100wh;
+
+}
+
+
+
+
+
+/* body{
 	margin: 0;
 	padding: 0;
 	height: 100;
@@ -36,4 +76,4 @@ footer{
 	grid-column: 2;
 	grid-row: 2;
 
-}
+} */
