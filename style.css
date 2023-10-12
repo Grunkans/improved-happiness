@@ -4,14 +4,16 @@ body{
 	padding: 0;
 	grid-template-columns: 1fr;
 	background-color: #BDBB9E;
-	/* grid-template-rows: auto auto auto; */
+	font-family: monospace;
+	font-size: large;
+
 }
 
 
 .header-container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	background-color: #9EAF97;
+	background-color: #6d6b52;
 	padding: 5px;
 	height: 15vh;
 	width: 100wh;
@@ -19,19 +21,29 @@ body{
 	align-items: center;
 
 
+
+}
+
+.header-container > *{
+
+	
 }
 
 .gothiapic > img{
 	width: 100%;
 	max-width: 50em;
+	border-radius: 2%;
+
 	
 }
+
 
 .gothiapic{
 	display: flex;
 	justify-content: center;
 
 }
+
 
 .main-container{
 	justify-self: center;
@@ -49,7 +61,7 @@ body{
 	max-width: 50em;
 }
 
-.seminarier-container{
+.seminarie-container{
 	/* grid-template-columns: 1fr;
 	display: grid; */
 	/* background-color: #BDBB9E; */
@@ -62,7 +74,7 @@ body{
 
 }
 
-.seminarier-container >*{
+.seminarie-container >*{
 	/* text-align: center; */
 	display: grid;
 	justify-content: center;
@@ -76,12 +88,21 @@ body{
 
 .footer-container{
 	display: grid;
-	background-color: #D7D0C8;
+	background-color: #afad99;
 	padding: 5px;
 	height: 8vh;
 	width: 100wh;
 }
 	
+
+form {
+	border: 2px solid black;
+	margin: 1em 0;
+	margin-top: 1em;
+	padding: 0.5em;
+	background-color: #afad99;
+
+}
 
 
 

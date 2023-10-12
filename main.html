@@ -5,28 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Bättre webb</title>
         <link rel="stylesheet" href="style.css" />
+	
     </head>
 
 	<body>
 
 
 		<div class="header-container">
-			<div>"Bättre webb</div>
-			<div>Seminarier</div>
+			<a href="main.html">Bättre webb</a>
+			<a href="seminarier.html">Seminarier</a>
+			<a href="#formularlank">Anmälan</a>
 		</div>
 
 
+
 		<div class="main-container">
+
+			<div>
+				<h3>Välkommen till Bättre Webb Konferensen i Göteborg!</h3>
+	
+				<h3>Datum: 20-22 oktober<br>
+			
+				Plats: Gothia Towers, Göteborg</h3>
+			</div>
+
 			<div class="gothiapic"><img src="img/gothia-towers1.jpg" alt="Bild på gothia towers, Göteborg"></div>
 
 			<div>
-				<div>
-					<h1>Välkommen till Bättre Webb Konferensen i Göteborg!</h1>
-
-					<h2>Datum: 20-22 oktober<br>
-				
-					Plats: Gothia Towers, Göteborg</h2>
-				</div>
 				
 				<div>
 					<h3>Vi är glada att meddela Bättre Webb konferensen, ett årligt evenemang som samlar webbutvecklare, designers och digitala entusiaster för att utforska de senaste trenderna och teknikerna inom frontend-utveckling och användarupplevelse.</h3>
@@ -52,7 +57,70 @@
 			</div>
 
 			<div><h3>Välkommen med din anmälan!</h3></div>
-			<div>formulär</div>
+			<a name="formularlank"></a>
+			<form>
+
+					<label for="form-name"> Namn: </label>
+					<input id="form-name" type="text" value="" placeholder="För och efternamn"
+				
+						
+				
+				<p> Vilka/vilken dag vill du gå? </p>
+				<div>
+					<input id="fre" type="checkbox"/> 
+					<label for="fre"> Fredag </label>
+				</div>
+				<div>
+					<input id="lor" type="checkbox"/>
+					<label for="lor"> Lördag </label>
+				</div>
+				<div>
+					<input id="son" type="checkbox"/> 
+					<label for="son"> Söndag </label>
+				</div>
+
+				<section class="dinner">
+					Val av middag
+
+					<div>
+						<input id="kott" type="radio"/> 
+						<label for="kott"> Kött </label>
+					</div>
+
+					<div>
+						<input id="vego" type="radio"/> 
+						<label for="vego"> Vegetariskt </label>
+					</div>
+
+					<div>
+						<input id="fisk" type="radio"/> 
+						<label for="fisk"> Fisk </label>
+					</div>
+
+					<div>
+						<label for="form-name"> Eventuella allergier: </label>
+						<input id="form-name" type="text" value=""
+
+					</div>
+
+
+					
+
+
+			
+
+
+
+				</section>
+
+
+			
+
+			
+				
+
+
+			</form>
 		</div>
 
 
