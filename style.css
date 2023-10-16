@@ -6,8 +6,29 @@ body{
 	background-color: #BDBB9E;
 	font-family: monospace;
 	font-size: large;
+	color: rgba(0, 0, 0, 0.9);
 
 }
+
+a{
+	color: rgba(0, 0, 0, 0.9);
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+a:hover{
+	color: #BDBB9E;
+	text-shadow: #BDBB9E;
+}
+
+a:active{
+	color: #BDBB9E;
+}
+
+
+
+
+
 
 
 .header-container{
@@ -24,22 +45,21 @@ body{
 
 .content-header{
 	display: grid;
+	grid-gap: 2em;
 	grid-template-columns: 1fr 1fr 1fr;
-	align-items: center;
+	place-items: center;
 	max-width: 50em;
 	
 }
 
 .content-header > *{
-	padding: 1em;
-	justify-content: space-between;
+
+	justify-content: space-evenly;
 
 }
 
 .header-container > *{
 	max-width: 50em;
-
-
 	
 }
 
@@ -53,7 +73,7 @@ body{
 
 .loggawebb > img{
 	width: 100%;
-	max-width: 8em;
+	max-width: 10em;
 	border-radius: 2%;
 }
 
@@ -116,54 +136,63 @@ body{
 	
 
 form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	border: 2px solid black;
+	border-radius: 2%;
 	margin: 1em 0;
 	margin-top: 1em;
 	padding: 0.5em;
 	background-color: #afad99;
+	
+	
 
 }
 
-
-
-
-
-/* body{
-	margin: 0;
-	padding: 0;
-	height: 100;
+input{
+	padding: 0.4em;
 }
 
-
-
-header{
-	background-color: #9EAF97;
-	padding: 0px;
-
-}
-
-main{
-	background-color: #BDBB9E;
-	flex: 1;
-	padding: 20px;
-	min-height: 100vh;
-}
-
-
-footer{
-	background-color: #D7D0C8;
-	padding: 20px;
-
-}
-
-.headergrid{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 2em 2em 2em;
-}
-
-.loggo{
-	grid-column: 2;
-	grid-row: 2;
-
+/* form > *{
+	max-width: 25em;
 } */
+
+
+button{
+	width: 5em;
+	justify-self: center;
+	margin:0.5em;
+}
+
+#form-name:valid{
+	border-right: 1em solid rgb(34, 65, 34);
+
+}
+
+#mail:valid{
+	border-right: 1em solid rgb(34, 65, 34);
+}
+
+#adress:valid{
+	border-right: 1em solid rgb(34, 65, 34);
+}
+
+#form-name:invalid{
+	border-right: 1em solid rgb(100, 18, 18);
+
+}
+
+#mail:invalid{
+	border-right: 1em solid rgb(100, 18, 18);
+
+}
+
+#adress:invalid{
+	border-right: 1em solid rgb(100, 18, 18);
+
+}
+
+input{
+	
+}

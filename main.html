@@ -13,9 +13,9 @@
 
 		<div class="header-container">
 			<div class="content-header">
-				<a href="main.html" class="loggawebb"><img src="img/Loggowebb.jpg" alt="Bild på logga "Bättre webb""></a>
-				<a href="#formularlank">Anmälan</a>
-				<a href="seminarier.html">Seminarier</a>
+				<div><a href="#formularlank">Anmälan</a></div>
+				<div><a href="main.html" class="loggawebb"><img src="img/nyloggo.jpg" alt="Bild på logga "Bättre webb""></a></div>
+				<div><a href="seminarier.html">Seminarier</a></div>
 			</div>
 		</div>
 
@@ -58,14 +58,44 @@
 				</div> 
 			</div>
 
+
+
+
 			<div><h3>Välkommen med din anmälan!</h3></div>
 			<a name="formularlank"></a>
+
+
+		
 			<form>
 
 					<label for="form-name"> Namn: </label>
-					<input id="form-name" type="text" value="" placeholder="För och efternamn"
+					<input id="form-name" type="text" value=""
+					 placeholder="För och efternamn"
+					 required
+					minlength="2"
+					maxlength="100">
+
+					<br>
+					<br>
 				
-						
+					<label for="mail"> E-post: </label>
+					<input id="mail" type="text" value="" placeholder="e-post"
+					required
+					minlength="2"
+					maxlength="100">
+
+					<br>
+					<br>
+
+					<label for="adress"> Adress: </label>
+					<input id="adress" type="text" value="" placeholder="Fullständig adress"
+					required
+					minlength="2"
+					maxlength="100">
+					
+					<br>
+					<br>
+					
 				
 				<p> Vilka/vilken dag vill du gå? </p>
 				<div>
@@ -81,46 +111,33 @@
 					<label for="son"> Söndag </label>
 				</div>
 
-				<section class="dinner">
-					Val av middag
-
-					<div>
-						<input id="kott" type="radio"/> 
-						<label for="kott"> Kött </label>
-					</div>
-
-					<div>
-						<input id="vego" type="radio"/> 
-						<label for="vego"> Vegetariskt </label>
-					</div>
-
-					<div>
-						<input id="fisk" type="radio"/> 
-						<label for="fisk"> Fisk </label>
-					</div>
-
-					<div>
-						<label for="form-name"> Eventuella allergier: </label>
-						<input id="form-name" type="text" value=""
-
-					</div>
-
-
-					
-
-
+				<br>
 			
 
+				<p> Val av middag </p>
+				<div>
+					<input id="kott" type="radio" name="1"/> 
+					<label for="kott"> Kött </label>
+				</div>
+				<div>
+					<input id="fisk" type="radio" name="1"/>
+					<label for="fisk"> Fisk </label>
+				</div>
+				<div>
+					<input id="vegetariskt" type="radio" name="1"/> 
+					<label for="vegetariskt"> Vegetariskt </label>
+				</div>
 
+					<br>
+					<br>
 
-				</section>
-
-
-			
-
-			
+					<div>
+						<label for="form-food"> Eventuella allergier/specialkost: </label>
+						<input id="form-food" type="text" value="">
+					</div>
 				
-
+					<button>Skicka</button>
+		
 
 			</form>
 		</div>
@@ -129,39 +146,5 @@
 		<div class="footer-container">
 			<div></div>
 		</div>
-
-
-
-
-		<!-- <header>
-
-			<div class = "headergrid">
-
-				<div class = "loggo">
-
-					Bättre webb
-
-				</div>
-
-			</div>
-
-
-		</header>
-
-
-		<main>
-
-			Main content    
-
-
-		</main>
-
-
-		<footer>
-
-			Footer
-
-
-		</footer> -->
 
 	</body>
