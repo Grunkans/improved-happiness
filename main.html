@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bättre webb</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style.css">
 	
     </head>
 
 	<body>
 
 
-		<div class="header-container">
+		<header class="header-container">
 			<div class="content-header">
 				<div><a href="#formularlank">Anmälan</a></div>
-				<div><a href="main.html" class="loggawebb"><img src="img/nyloggo.jpg" alt="Bild på logga "Bättre webb""></a></div>
+				<div><a href="main.html" class="loggawebb"> <img src="img/nyloggo.jpg" alt="Bild på logga Bättre webb"></a></div>
 				<div><a href="seminarier.html">Seminarier</a></div>
 			</div>
-		</div>
+		</header>
 
 
 
-		<div class="main-container">
+		<main class="main-container">
 
 			<div>
-				<h3>Välkommen till Bättre Webb Konferensen i Göteborg!</h3>
+				<h2>Välkommen till Bättre webb Konferensen i Göteborg!</h>
 	
 				<h3>Datum: 20-22 oktober<br>
 			
@@ -33,118 +33,138 @@
 
 			<div class="gothiapic"><img src="img/gothia-towers1.jpg" alt="Bild på gothia towers, Göteborg"></div>
 
-			<div>
+			<section>
 				
-				<div>
+				<section>
 					<h3>Vi är glada att meddela Bättre Webb konferensen, ett årligt evenemang som samlar webbutvecklare, designers och digitala entusiaster för att utforska de senaste trenderna och teknikerna inom frontend-utveckling och användarupplevelse.</h3>
-				</div>
+				</section>
 				
-				<div>
-					<p><b>Vad kan du förvänta dig?</b><br>
-					Spännande Seminarier: Konferensen kommer att erbjuda ett brett utbud av seminarier och workshops ledda av experter inom området. Från React till moderna CSS-tekniker och användarupplevelse, kommer du att få insikter och färdigheter som hjälper dig att förbättra ditt arbete. </p>
-				</div>
+				<section>
+					<h3>Vad kan du förvänta dig?</h3>
+					<p>Spännande Seminarier: Konferensen kommer att erbjuda ett brett utbud av seminarier och workshops ledda av experter inom området. Från React till moderna CSS-tekniker och användarupplevelse, kommer du att få insikter och färdigheter som hjälper dig att förbättra ditt arbete. </p>
+				</section>
 				
 				
-				<div>
-					<p>Nätverkande: Möjligheten att träffa och nätverka med andra frontend-utvecklare och branschexperter är ovärderlig. Bygg nya kontakter, diskutera idéer och samarbeta på framtida projekt.<p> 
-				</div>
+				<section>
+					<h4>Nätverkande</h4> 
+					<p>Möjligheten att träffa och nätverka med andra frontend-utvecklare och branschexperter är ovärderlig. Bygg nya kontakter, diskutera idéer och samarbeta på framtida projekt.</p> 
+				</section>
 				
-				<div>
-					<p>Inspirerande Keynotes: Lyssna på inspirerande keynote-talare som delar sina erfarenheter och insikter om framtidens webbutveckling.</p> 
-				</div>
+				<section>
+					<h4>Inspirerande Keynotes</h4> 
+					<p>Lyssna på inspirerande keynote-talare som delar sina erfarenheter och insikter om framtidens webbutveckling.</p> 
+				</section>
 				
-				<div>
-					<p>Middagar och Sociala Event: Koppla av och njut av god mat på de sociala evenemangen och middagarna där du kan fortsätta diskussionen med dina nya kontakter. </p>
-				</div> 
-			</div>
+				<section>
+					<h4>Middagar och Sociala Event</h4> 
+					<p>Koppla av och njut av god mat på de sociala evenemangen och middagarna där du kan fortsätta diskussionen med dina nya kontakter. </p>
+				</section> 
+			</section>
 
 
 
 
-			<div><h3>Välkommen med din anmälan!</h3></div>
-			<a name="formularlank"></a>
+			<h3>Välkommen med din anmälan!</h3>
+			<a id="formularlank"></a>
 
 
 		
 			<form>
 
-					<label for="form-name"> Namn: </label>
-					<input id="form-name" type="text" value=""
-					 placeholder="För och efternamn"
-					 required
-					minlength="2"
-					maxlength="100">
+				<section class="personliginfo">
 
-					<br>
-					<br>
-				
-					<label for="mail"> E-post: </label>
-					<input id="mail" type="text" value="" placeholder="e-post"
-					required
-					minlength="2"
-					maxlength="100">
 
-					<br>
-					<br>
 
-					<label for="adress"> Adress: </label>
-					<input id="adress" type="text" value="" placeholder="Fullständig adress"
-					required
-					minlength="2"
-					maxlength="100">
+					<h4>Personlig information</h4>
+
 					
-					<br>
-					<br>
+					<div>
+						<p><label for="form-name"> Namn: </label></p>
+						<input id="form-name" type="text" value=""
+					 	placeholder="För och efternamn"
+					 	required
+						minlength="2"
+						maxlength="100">
+					</div>
+					
+					<div>
+						<p><label for="email"> E-post: </label></p>
+						<input id="mail" type="email" value="" placeholder="E-post"
+						required>
+					</div>	
+
+		
+					<div>
+						<p><label for="adress"> Adress: </label></p>
+						<input id="adress" type="text" value="" placeholder="Fullständig adress"
+						required
+						minlength="2"
+						maxlength="100">
+					</div>
 					
 				
-				<p> Vilka/vilken dag vill du gå? </p>
-				<div>
-					<input id="fre" type="checkbox"/> 
-					<label for="fre"> Fredag </label>
-				</div>
-				<div>
-					<input id="lor" type="checkbox"/>
-					<label for="lor"> Lördag </label>
-				</div>
-				<div>
-					<input id="son" type="checkbox"/> 
-					<label for="son"> Söndag </label>
-				</div>
+				</section>
+				
+				<section class="vilkendag">
+				
+					<h4> Vilka/vilken dag vill du gå? </h4>
+
+					<div>
+						<input id="fre" type="checkbox"> 
+						<label for="fre"> Fredag </label>
+					</div>
+					<div>
+						<input id="lor" type="checkbox">
+						<label for="lor"> Lördag </label>
+					</div>
+					<div>
+						<input id="son" type="checkbox"> 
+						<label for="son"> Söndag </label>
+					</div>
+				</section>
 
 				<br>
 			
 
-				<p> Val av middag </p>
-				<div>
-					<input id="kott" type="radio" name="1"/> 
-					<label for="kott"> Kött </label>
-				</div>
-				<div>
-					<input id="fisk" type="radio" name="1"/>
-					<label for="fisk"> Fisk </label>
-				</div>
-				<div>
-					<input id="vegetariskt" type="radio" name="1"/> 
-					<label for="vegetariskt"> Vegetariskt </label>
-				</div>
+				<section class="mat">
+					<h4> Val av middag </h4>
 
+						<div>
+						<input id="kott" type="radio" name="1"> 
+						<label for="kott"> Kött </label>
+					</div>
+					<div>
+						<input id="fisk" type="radio" name="1">
+						<label for="fisk"> Fisk </label>
+					</div>
+					<div>
+						<input id="vegetariskt" type="radio" name="1"> 
+						<label for="vegetariskt"> Vegetariskt </label>
+					</div>
+					<div>
+						<input id="none" type="radio" name="1"> 
+						<label for="none"> Ingen mat </label>
+					</div>
 					<br>
-					<br>
-
+				
 					<div>
 						<label for="form-food"> Eventuella allergier/specialkost: </label>
 						<input id="form-food" type="text" value="">
 					</div>
-				
+
+				</section>
+
+				<div class="knapp">
 					<button>Skicka</button>
+				</div>
 		
 
 			</form>
-		</div>
+		</main>
 
 
-		<div class="footer-container">
+		<footer class="footer-container">
 			<div></div>
-		</div>
+		</footer>
 
 	</body>
