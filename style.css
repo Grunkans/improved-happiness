@@ -52,7 +52,7 @@ a:active{
 
 .content-header > *{
 
-	justify-content: space-evenly;
+	justify-content: space-between;
 
 }
 
@@ -73,6 +73,10 @@ a:active{
 	width: 100%;
 	max-width: 10em;
 	border-radius: 2%;
+}
+
+.loggawebb{
+	display:flex;
 }
 
 
@@ -123,6 +127,7 @@ a:active{
 	margin-bottom: 1.5em;
 	transition: 0.4s;
 	box-shadow: 0.3em 0.3em 0.2em #585645;
+	
 }
 
 .friday:hover , .saturday:hover , .sunday:hover{
@@ -137,7 +142,10 @@ a:active{
 	background-color: #afad99;
 	padding: 5px;
 	height: 8vh;
+
 }
+
+
 	
 
 form {
@@ -150,6 +158,7 @@ form {
 	margin-top: 1em;
 	padding: 0.5em;
 	background-color: #afad99;
+	box-shadow: 0.3em 0.3em 0.2em #585645;
 	
 	
 
@@ -203,4 +212,5 @@ button:hover{
 	border-right: 1em solid rgb(100, 18, 18);
 
 }
+
 
